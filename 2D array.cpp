@@ -1,33 +1,33 @@
-
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long int ll;
+#define fll(i,a,n) for(ll i=a;i<n;i++)
+#define fi(i,a,n) for(int i=a;i<n;i++)
 
-int main()
-{
-    int r,c;
-   cout<<"ENter the dimention of the metrics you want to print"<<endl;
-   cout<<"Starting with rows:";
-   cin>>r;
-   cout<<"Now its time for column:";
-   cin>>c;
+int main() {
+    ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	ll t;
+	cin >> t;
+	for(int i=0;i<t;i++){
+	    ll n;
+	    ll x;
+	    ll y;
+	    cin >> x ;
+	     cin >> y ;
+	      cin >> n ;
 
-   float array[r][c];
-   for(int i=0;i<c;i++){
-       for(int j=0;j<r;j++){
-           cin>>array[j][i];
-       }
-   }
-   cout<<"Now its time to print";
+	      while(n!=0){
+	        if( n%x==y) {
+
+	            break;
+	        }else{
+	              n--;
+	        }
+
+	      }
+	    cout<<n<<endl;
 
 
-   for(int i=0;i<c;i++){
-       for(int j=0;j<r;j++){
-          cout << "Element at x[" << i
-                 << "][" << j << "]: ";
-            cout << array[i][j]<<endl;
-       }
-       cout<<endl;
-   }
-
+}
 }
