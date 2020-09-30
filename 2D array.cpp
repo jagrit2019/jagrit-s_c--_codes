@@ -2,7 +2,7 @@
 using namespace std;
 typedef long long int ll;
 #define fll(i,a,n) for(ll i=a;i<n;i++)
-#define fi(i,a,n) for(int i=a;i<n;i++)
+#define fi(i,a,n) for(int i=a;i<n;i++).     // this way you can create your own syntax to make you code smaller
 
 int main() {
     ios_base::sync_with_stdio(false);
